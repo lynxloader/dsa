@@ -1,0 +1,16 @@
+    local WebhookFFAMode = {
+    ["embeds"] = {
+     {
+      ["title"] = "Grayx User Executed!",
+      ["description"] = "This User Has Executed\nThe Script via FFA mode.\nSuccessfully.",
+      ["color"] = "15790320",
+      ["fields"] = {
+       {["name"] = "**USE EXPOILT:**",["value"] = "```"..getexecutorname.." Hwid```"},{["name"] = "**HWID:**",["value"] = "```"..game:GetService("RbxAnalyticsService"):GetClientId() .."```"},{["name"] = "**JOB ID:**",["value"] = "```"..game.JobId.."```"}
+      },
+      ["image"] = {["url"] = "https://cdn.discordapp.com/attachments/1219904165094887454/1219904685230522439/grayx1.png?ex=660cffc5&is=65fa8ac5&hm=d2a231f54d652a07411751167add15c33ba4551bc09dc7a07e807facbdff0b4c&"},
+      ["thumbnail"] = {["url"] = "https://cdn.discordapp.com/attachments/1219904165094887454/1219904685230522439/grayx1.png?ex=660cffc5&is=65fa8ac5&hm=d2a231f54d652a07411751167add15c33ba4551bc09dc7a07e807facbdff0b4c&"}
+      }
+     },
+    }
+    local Send = http_request or request or HttpPost or syn.request
+Send({Url = UrlWebhook, Body = game:GetService("HttpService"):JSONEncode(WebhookFFAMode), Method = "POST", Headers = {["content-type"] = "application/json"}})
