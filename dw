@@ -1,0 +1,60 @@
+spawn(function()
+ while wait() do
+  if getgenv().AutoStats and getgenv().AutoStatsDefense then
+    local args = {
+        [1] = "Defense",
+        [3] = 1
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("stats"):FireServer(unpack(args))
+  end
+ end
+end)
+spawn(function()
+ while wait() do
+  if getgenv().AutoStats and getgenv().AutoStatsStamina then
+    local args = {
+        [1] = "Stamina",
+        [3] = 1
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("stats"):FireServer(unpack(args))
+  end
+ end
+end)
+spawn(function()
+ while wait() do
+  if getgenv().AutoStats and getgenv().AutoStatsGunMastery then
+    local args = {
+        [1] = "GunMastery",
+        [3] = 1
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("stats"):FireServer(unpack(args))
+  end
+ end
+end)
+spawn(function()
+ while wait() do
+  if getgenv().AutoStats and getgenv().SwordMastery then
+    local args = {
+        [1] = "SwordMastery",
+        [3] = 1
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("stats"):FireServer(unpack(args))
+  end
+ end
+end)
+spawn(function()
+ while wait() do
+  if getgenv().AutoStats and getgenv().StatsStrength then
+    local args = {
+        [1] = "Strength",
+        [3] = 1
+    }
+    
+    game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("stats"):FireServer(unpack(args))
+  end
+ end
+end)
